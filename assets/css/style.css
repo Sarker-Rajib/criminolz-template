@@ -1,0 +1,115 @@
+/*=== abstracts css start === */
+@font-face {
+  font-family: "Verdana-regular";
+  src: url(../fonts/verdana.ttf);
+}
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after, ::before {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul, p, address, strong, i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Verdana-regular";
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
+.fs-12 {
+  font-size: 12px;
+}
+
+/*===// end of base css === */
+/*=== layouts css start === */
+.all-wrapper {
+  min-height: 100vh;
+  max-width: 1380px;
+  --bs-gutter-x: 1rem;
+  background: url(../images/main-bachtergrond.png) no-repeat top center/cover fixed;
+}
+
+.content-wrapper {
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: auto;
+  background: url(../images/wrapper-bg.png) no-repeat center center/cover;
+}
+
+.header .header-top {
+  background: url(../images/topbar.png) no-repeat center center/cover;
+}
+.header .main-header .logo-wrap {
+  background: url(../images/logo/lbg-main.png) no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+  padding-left: 30px;
+}
+.header .main-header .logo-wrap .logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 35px;
+  background: url(../images/logo/logo-bg.png) no-repeat top left;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  -webkit-font-smoothing: antialiased;
+}
+.header .main-header .stats {
+  padding: 10px 0;
+  background: url(../images/logo/h-bg-2.png) no-repeat left bottom/cover;
+}
+.header .main-header .stats .wlk {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+}
+.header .main-header .stats .wlk span {
+  color: #e1b710;
+}
+.header .main-header .stats p {
+  font-size: 11px;
+  color: #bfbfbf;
+}
+.header .main-header .stats .progress {
+  background: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px;
+  height: 12px;
+  font-size: 10px;
+}
+.header .main-header .stats .minus-button {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  padding: 5px;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */

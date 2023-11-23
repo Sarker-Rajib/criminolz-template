@@ -1,0 +1,62 @@
+.header {
+    .header-top {
+        background: url(../images/topbar.png) no-repeat center center/cover;
+    }
+
+    .main-header {
+        .logo-wrap {
+            background: url(../images/logo/lbg-main.png) no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            min-height: 100px;
+            padding-left: 30px;
+
+            .logo {
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 35px;
+                background: url(../images/logo/logo-bg.png) no-repeat top left;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                text-align: center;
+                font-weight: bold;
+                text-transform: uppercase;
+                -webkit-font-smoothing: antialiased;
+            }
+        }
+
+        .stats {
+            padding: 10px 0;
+            background: url(../images/logo/h-bg-2.png) no-repeat left bottom/cover;
+
+            .wlk {
+                color: #fff;
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 18px;
+
+                span {
+                    color: #e1b710;
+                }
+            }
+
+            p {
+                font-size: 11px;
+                color: #bfbfbf;
+            }
+
+            .progress {
+                background: #00000000;
+                border: 1px solid #fff;
+                border-radius: 10px;
+                height: 12px;
+                font-size: 10px;
+            }
+
+            .minus-button {
+                position: absolute;
+                right: 10px;
+                top: 0;
+                padding: 5px;
+            }
+        }
+    }
+}
