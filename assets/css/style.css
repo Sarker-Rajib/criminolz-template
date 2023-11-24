@@ -289,8 +289,21 @@ body {
   color: #fff;
 }
 
+@media (max-width: 991px) {
+  .header {
+    padding-top: 65px;
+  }
+}
 .header .header-top {
   background: url(../images/topbar.png) no-repeat center center/cover;
+}
+@media (max-width: 991px) {
+  .header .header-top {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 8;
+  }
 }
 .header .main-header .logo-wrap {
   background: url(../images/logo/lbg-main.png) no-repeat center center/cover;
@@ -364,6 +377,34 @@ body {
     transition: all 0.3s;
     height: 0;
   }
+}
+.header .main-header .login {
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.6980392157);
+  padding: 12px 15px;
+}
+.header .main-header .login .input-group {
+  border: 1px solid #4a0c0d;
+  border-radius: 13px;
+  overflow: hidden;
+  background: #000;
+  background: linear-gradient(90deg, rgb(12, 13, 13) 0%, rgb(0, 0, 0) 100%);
+}
+.header .main-header .login .input-group .input-group-text {
+  background: transparent;
+  border-color: #000;
+}
+.header .main-header .login .input-group .in-place {
+  background: transparent;
+  border-color: #000;
+  color: #fff;
+}
+.header .main-header .login .btn-login {
+  border-radius: 7px;
+  background: #92141a;
+  background: linear-gradient(270deg, rgba(146, 20, 26, 0.89) 0%, rgba(112, 16, 20, 0.9) 50%, rgba(112, 16, 20, 0.81) 83%, rgba(112, 16, 20, 0.9) 100%);
+  height: 100%;
+  width: 100%;
 }
 
 .footer {
