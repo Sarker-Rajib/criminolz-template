@@ -81,6 +81,33 @@
         min-width: 245px;
         max-width: 246px;
     }
+
+    .in-inpt,
+    .in-btn {
+        width: 95px;
+        border-radius: 5px;
+        border: 0;
+        padding: 5px;
+        font-size: 14px;
+        color: #ffffff;
+    }
+
+    .in-inpt {
+        background: #6161612d;
+    }
+
+    .in-btn {
+        font-weight: 600;
+        border: 1px solid #560808;
+        border-radius: 3px;
+        background: linear-gradient(0deg, rgb(114, 19, 19) 0%, rgb(229, 13, 13) 100%);
+
+        &.dark {
+            border: 1px solid #560808;
+            background-image: linear-gradient(0deg, rgb(80, 17, 17) 0%, rgb(149, 13, 13) 100%);
+        }
+    }
+
 }
 
 .linjen {
