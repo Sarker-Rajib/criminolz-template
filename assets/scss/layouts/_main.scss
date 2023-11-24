@@ -89,7 +89,26 @@
 
             .p-wrap {
                 padding: 12px;
-                background: url(../images/eif.png) no-repeat top left/cover;
+                min-height: 110px;
+                // background: url(../images/eif.png) no-repeat top left/cover;
+                position: relative;
+                overflow: hidden;
+
+                .overlay-image {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 100%;
+
+                    @media(max-width: 1199px) {
+                        transform: scale(1.6);
+                    }
+
+                    @media(max-width: 767px) {
+                        transform: scale(2.0);
+                    }
+                }
             }
         }
 
