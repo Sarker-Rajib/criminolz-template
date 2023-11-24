@@ -282,6 +282,11 @@ body {
   background: url(../images/lijnen.png);
 }
 
+.close-btn {
+  background: #251d17;
+  color: #fff;
+}
+
 .header .header-top {
   background: url(../images/topbar.png) no-repeat center center/cover;
 }
@@ -351,7 +356,7 @@ body {
 }
 @media (max-width: 767px) {
   .header .main-header .all-info {
-    height: 210px;
+    height: 160px;
   }
   .header .main-header .all-info.hide {
     transition: all 0.3s;

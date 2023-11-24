@@ -28,7 +28,7 @@
         }
 
         .all-info {
-            transition:all 0.3s;
+            transition: all 0.3s;
             overflow: hidden;
 
             .stats {
@@ -57,7 +57,7 @@
                     height: 12px;
                     font-size: 10px;
 
-                    .level-bg{
+                    .level-bg {
                         background: rgb(251, 4, 1);
                         background: linear-gradient(90deg, rgb(251, 4, 1) 0%, rgb(6, 249, 64) 100%);
                     }
@@ -76,7 +76,7 @@
             }
 
             @media(max-width: 767px) {
-                height: 210px;
+                height: 160px;
 
                 &.hide {
                     transition: all 0.3s;
