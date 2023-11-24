@@ -11,3 +11,84 @@
     margin: auto;
     background: url(../images/wrapper-bg.png) no-repeat center center/cover;
 }
+
+.inner-contents-wrapper {
+    display: flex;
+    align-items: start;
+
+    .left {
+        min-width: 245px;
+        max-width: 246px;
+    }
+
+    .middle {
+        flex-grow: 1;
+
+        .content-card {
+            background: #191816;
+            border: 1px solid #3c3b3a;
+            outline: 1px solid #00000000;
+            margin-bottom: 15px;
+
+            .section-header {
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 23px;
+
+                img {
+                    margin-right: 5px;
+                }
+            }
+
+            .sub-heading {
+                font-family: 'hobo-std';
+                font-size: 14px;
+                padding: 12px;
+            }
+
+            .top {
+                background: url(../images/content-topper.png) no-repeat;
+                background-size: 100% auto;
+                padding: 12px;
+            }
+
+            .bottom {
+                padding: 12px;
+                background: url(../images/content-booter.png) no-repeat bottom;
+                background-size: 100% auto;
+            }
+
+            .con-text {
+                font-size: 11px;
+
+                span {
+                    color: #fdad02;
+                }
+
+                &.yellow {
+                    color: #fdad02;
+                }
+            }
+
+            .p-wrap {
+                padding: 12px;
+                background: url(../images/eif.png) no-repeat top left/cover;
+            }
+        }
+
+    }
+
+    .right {
+        min-width: 245px;
+        max-width: 246px;
+    }
+}
+
+.linjen {
+    height: 4px;
+    background: url(../images/lijnen.png);
+}
+
+.linjen-1 {
+    height: 3px;
+    background: url(../images/lijnen.png);
+}

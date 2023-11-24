@@ -3,6 +3,10 @@
   font-family: "Verdana-regular";
   src: url(../fonts/verdana.ttf);
 }
+@font-face {
+  font-family: "hobo-std";
+  src: url("../fonts/Hobo-Std-Font.otf");
+}
 /*===// end of abstracts css === */
 /*=== base css start === */
 * {
@@ -34,11 +38,6 @@ body {
   color: #ffffff;
 }
 
-@media (min-width: 768px) {
-  .w-md-50 {
-    width: 50%;
-  }
-}
 .fs-12 {
   font-size: 12px;
 }
@@ -57,6 +56,73 @@ body {
   min-height: 100vh;
   margin: auto;
   background: url(../images/wrapper-bg.png) no-repeat center center/cover;
+}
+
+.inner-contents-wrapper {
+  display: flex;
+  align-items: start;
+}
+.inner-contents-wrapper .left {
+  min-width: 245px;
+  max-width: 246px;
+}
+.inner-contents-wrapper .middle {
+  flex-grow: 1;
+}
+.inner-contents-wrapper .middle .content-card {
+  background: #191816;
+  border: 1px solid #3c3b3a;
+  outline: 1px solid rgba(0, 0, 0, 0);
+  margin-bottom: 15px;
+}
+.inner-contents-wrapper .middle .content-card .section-header {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 23px;
+}
+.inner-contents-wrapper .middle .content-card .section-header img {
+  margin-right: 5px;
+}
+.inner-contents-wrapper .middle .content-card .sub-heading {
+  font-family: "hobo-std";
+  font-size: 14px;
+  padding: 12px;
+}
+.inner-contents-wrapper .middle .content-card .top {
+  background: url(../images/content-topper.png) no-repeat;
+  background-size: 100% auto;
+  padding: 12px;
+}
+.inner-contents-wrapper .middle .content-card .bottom {
+  padding: 12px;
+  background: url(../images/content-booter.png) no-repeat bottom;
+  background-size: 100% auto;
+}
+.inner-contents-wrapper .middle .content-card .con-text {
+  font-size: 11px;
+}
+.inner-contents-wrapper .middle .content-card .con-text span {
+  color: #fdad02;
+}
+.inner-contents-wrapper .middle .content-card .con-text.yellow {
+  color: #fdad02;
+}
+.inner-contents-wrapper .middle .content-card .p-wrap {
+  padding: 12px;
+  background: url(../images/eif.png) no-repeat top left/cover;
+}
+.inner-contents-wrapper .right {
+  min-width: 245px;
+  max-width: 246px;
+}
+
+.linjen {
+  height: 4px;
+  background: url(../images/lijnen.png);
+}
+
+.linjen-1 {
+  height: 3px;
+  background: url(../images/lijnen.png);
 }
 
 .header .header-top {
