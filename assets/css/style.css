@@ -333,7 +333,7 @@ body {
 }
 .header .main-header .all-info .stats {
   padding: 10px 0;
-  background: url(../images/logo/h-bg-2.png) no-repeat left bottom/cover;
+  background: url(../images/hbg-stat.png) no-repeat top left/cover;
 }
 .header .main-header .all-info .stats .wlk {
   color: #fff;
