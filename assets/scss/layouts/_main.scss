@@ -20,11 +20,22 @@
     .left {
         min-width: 245px;
         max-width: 246px;
+        transition: all 0.3s;
 
         @media(max-width: 991px) {
+            z-index: 998;
+            height: 100vh;
+            background: #000;
+            overflow-y: scroll;
             position: fixed;
             top: 0;
-            left: -246px;
+            left: 0;
+        }
+
+        &.hide {
+            @media(max-width: 991px) {
+                left: -246px;
+            }
         }
     }
 
@@ -88,11 +99,22 @@
     .right {
         min-width: 245px;
         max-width: 246px;
+        transition: all 0.3s;
 
         @media(max-width: 991px) {
+            z-index: 999;
+            height: 100vh;
+            background: #000;
+            overflow-y: scroll;
             position: fixed;
             top: 0;
-            right: -246px;
+            right: 0;
+        }
+
+        &.hide {
+            @media(max-width: 991px) {
+                right: -246px;
+            }
         }
     }
 
@@ -122,13 +144,12 @@
         }
     }
 
-
     .link-wrapper {
         position: relative;
 
         .body {
             background: url(../images/link-bg.png) no-repeat;
-            background-size: 100% auto;
+            background-size: 100% 100%;
             border: 1px solid #6e615388;
             padding: 15px 15px 5px;
             margin-bottom: 10px;

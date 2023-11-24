@@ -18,7 +18,7 @@
   <div class="container all-wrapper">
     <div class="content-wrapper">
       <!-- all codes for ===***header***=== starts from here -->
-      <header class="header mb-3 mb-lg-0">
+      <header class="header mb-lg-0">
         <div class="header-top py-2">
           <p class="text-center text-white fs-12">
             <img width="14" src="assets/images/icons/melding.png" alt="a">
@@ -34,8 +34,11 @@
                   <h1 class="logo">Unknown project</h1>
                 </div>
 
-                <button class="btn bg-light px-2 pt-0 pb-1 me-2 d-md-none" id="info-toggler">
-                  <img width="20" src="assets/images/menu-svgrepo-com.svg" alt="M">
+                <button class="border-0 p-1 rounded-2 bg-light px-2 me-2 d-md-none" id="info-toggler"
+                  style="font-size: 12px; width: 80px;">
+                  <span id="info-s">Show</span>
+                  <span class="d-none" id="info-h">Hide</span>
+                  Info
                 </button>
               </div>
             </div>
@@ -120,7 +123,12 @@
       </header>
 
       <div class="inner-contents-wrapper">
-        <div class="left">
+        <div class="left hide" id="leftMenu">
+          <!-- close button -->
+          <div class="sticky-top text-end d-lg-none" style="background: #4a627063;">
+            <button class="btn text-dark bg-light me-3" id="CloseBtnLeft">Close</button>
+          </div>
+          <!--  -->
           <div class="link-wrapper left-space">
             <div class="body">
               <h4 class="heading">ALGAMEEN</h4>
@@ -175,6 +183,17 @@
         </div>
 
         <div class="middle">
+          <!-- side nav toggler -->
+          <div class="d-lg-none d-flex justify-content-between py-2 px-1">
+            <button class="btn bg-light px-2 pt-0 pb-1" id="left-menu-toggler">
+              <img width="20" src="assets/images/menu-svgrepo-com.svg" alt="M">
+            </button>
+            <button class="btn bg-light px-2 pt-0 pb-1" id="right-menu-toggler">
+              <img width="20" src="assets/images/menu-svgrepo-com.svg" alt="M">
+            </button>
+          </div>
+          <!--  -->
+
           <!-- fisrt one -->
           <div class="content-card">
             <div class="top">
@@ -285,7 +304,12 @@
         </div>
 
 
-        <div class="right">
+        <div class="right hide" id="rigtMenu">
+          <!-- close buton right -->
+          <div class="sticky-top d-lg-none" style="background: #4a627063;">
+            <button class="btn text-dark bg-light me-3" id="CloseBtnRight">Close</button>
+          </div>
+          <!--  -->
           <div class="link-wrapper right-space">
             <div class="body">
               <h4 class="heading">ALGAMEEN</h4>
