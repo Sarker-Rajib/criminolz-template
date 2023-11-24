@@ -1,3 +1,19 @@
 .footer {
     background: url(../images/topbar.png) no-repeat center center/cover;
+    position: relative;
+    margin-top: 12px;
+
+    .footer-l,
+    .footer-r {
+        position: absolute;
+        top: -18px;
+    }
+
+    .footer-l {
+        left: -4px;
+    }
+
+    .footer-r {
+        right: 0;
+    }
 }

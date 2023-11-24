@@ -3,6 +3,7 @@
     max-width: 1380px;
     --bs-gutter-x: 0.5rem;
     background: url(../images/main-bachtergrond.png) no-repeat top center/cover fixed;
+    overflow: hidden;
 }
 
 .content-wrapper {
@@ -22,11 +23,14 @@
 
         @media(max-width: 991px) {
             position: fixed;
+            top: 0;
+            left: -246px;
         }
     }
 
     .middle {
         flex-grow: 1;
+        padding: 0 5px;
 
         .content-card {
             background: #191816;
@@ -87,6 +91,8 @@
 
         @media(max-width: 991px) {
             position: fixed;
+            top: 0;
+            right: -246px;
         }
     }
 
@@ -116,6 +122,103 @@
         }
     }
 
+
+    .link-wrapper {
+        position: relative;
+
+        .body {
+            background: url(../images/link-bg.png) no-repeat;
+            background-size: 100% auto;
+            border: 1px solid #6e615388;
+            padding: 15px 15px 5px;
+            margin-bottom: 10px;
+
+            .heading {
+                font-family: 'Bebas Neue', sans-serif;
+                font-size: 23px;
+                padding-left: 25px;
+            }
+
+            ul {
+                padding: 10px 0 0;
+                position: relative;
+                z-index: 999;
+
+                li {
+                    padding-left: 20px;
+                    position: relative;
+
+                    a {
+                        font-family: 'Verdana-bold';
+                        color: #fff;
+                        font-size: 11px;
+                        font-weight: bold;
+                        display: block;
+                        padding: 5px 0;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        height: 9px;
+                        width: 9px;
+                        background: url(../images/star.png) no-repeat center center/contain;
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        height: 2px;
+                        width: 100%;
+                        background: url(../images/line.png) no-repeat left top;
+                        background-size: 100% auto;
+                    }
+
+                    &:hover {
+                        &::after {
+                            height: 15px;
+                            width: 15px;
+                            left: -3px;
+                            background: url(../images/whole.png) no-repeat center center/contain;
+                        }
+                    }
+
+                    &:last-child {
+                        &::before {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        &.left-space {
+            padding: 23px 5px 0 18px;
+
+            .menutop-img {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+
+        &.right-space {
+            padding: 23px 18px 0 5px;
+
+            .menutop-img {
+                position: absolute;
+                top: 0;
+                right: 0;
+
+            }
+        }
+    }
 }
 
 .linjen {
