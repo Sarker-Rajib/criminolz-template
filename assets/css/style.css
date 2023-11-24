@@ -332,7 +332,7 @@ body {
   overflow: hidden;
 }
 .header .main-header .all-info .stats {
-  padding: 10px 0;
+  padding: 20px 10px 10px 60px;
   background: url(../images/hbg-stat.png) no-repeat top left/cover;
 }
 .header .main-header .all-info .stats .wlk {
