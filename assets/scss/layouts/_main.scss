@@ -22,13 +22,14 @@
         transition: all 0.3s;
 
         @media(max-width: 991px) {
-            z-index: 998;
-            height: 100vh;
+            z-index: 996;
             background: #000;
             overflow-y: scroll;
             position: fixed;
-            top: 0;
             left: 0;
+            height: calc(100vh - 58px);
+            top: 58px;
+            padding-bottom: 40px;
         }
 
         &.hide {
@@ -121,12 +122,13 @@
 
         @media(max-width: 991px) {
             z-index: 999;
-            height: 100vh;
             background: #000;
             overflow-y: scroll;
             position: fixed;
-            top: 0;
             right: 0;
+            height: calc(100vh - 58px);
+            top: 58px;
+            padding-bottom: 40px;
         }
 
         &.hide {
