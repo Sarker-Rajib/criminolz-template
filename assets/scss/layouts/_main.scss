@@ -19,6 +19,10 @@
     .left {
         min-width: 245px;
         max-width: 246px;
+
+        @media(max-width: 991px) {
+            position: fixed;
+        }
     }
 
     .middle {
@@ -80,6 +84,10 @@
     .right {
         min-width: 245px;
         max-width: 246px;
+
+        @media(max-width: 991px) {
+            position: fixed;
+        }
     }
 
     .in-inpt,

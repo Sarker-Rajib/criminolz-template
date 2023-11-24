@@ -66,6 +66,11 @@ body {
   min-width: 245px;
   max-width: 246px;
 }
+@media (max-width: 991px) {
+  .inner-contents-wrapper .left {
+    position: fixed;
+  }
+}
 .inner-contents-wrapper .middle {
   flex-grow: 1;
 }
@@ -113,6 +118,11 @@ body {
 .inner-contents-wrapper .right {
   min-width: 245px;
   max-width: 246px;
+}
+@media (max-width: 991px) {
+  .inner-contents-wrapper .right {
+    position: fixed;
+  }
 }
 .inner-contents-wrapper .in-inpt,
 .inner-contents-wrapper .in-btn {
