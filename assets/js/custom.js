@@ -1,9 +1,3 @@
-document.getElementById("info-toggler").addEventListener('click', () => {
-    document.getElementById("info").classList.toggle('hide')
-    document.getElementById("info-s").classList.toggle('d-none')
-    document.getElementById("info-h").classList.toggle('d-none')
-})
-
 document.getElementById("left-menu-toggler").addEventListener('click', () => {
     document.getElementById("leftMenu").classList.toggle('hide')
     document.getElementById("opn1").classList.toggle('d-none')
@@ -26,4 +20,10 @@ document.getElementById("right-menu-toggler").addEventListener('click', () => {
         document.getElementById("cls1").classList.add('d-none')
         document.getElementById("leftMenu").classList.add('hide')
     }
+})
+
+document.getElementById("info-toggler").addEventListener('click', () => {
+    document.getElementById("info").classList.toggle('hide')
+    document.getElementById("info-s").classList.toggle('d-none')
+    document.getElementById("info-h").classList.toggle('d-none')
 })
