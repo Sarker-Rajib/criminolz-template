@@ -6,10 +6,12 @@
 }
 
 .content-wrapper {
-    max-width: 1380px;
     min-height: 100vh;
-    margin: auto;
+    max-width: 1380px;
     background: url(../images/wrapper-bg.png) no-repeat center center/cover;
+    margin: auto;
+    position: relative;
+    padding-bottom: 46px;
 }
 
 .inner-contents-wrapper {
@@ -27,8 +29,8 @@
             overflow-y: scroll;
             position: fixed;
             left: 0;
-            height: calc(100vh - 58px);
-            top: 58px;
+            height: calc(100vh - 70px);
+            top: 70px;
             padding-bottom: 60px;
         }
 
@@ -131,8 +133,8 @@
             overflow-y: scroll;
             position: fixed;
             right: 0;
-            height: calc(100vh - 58px);
-            top: 58px;
+            height: calc(100vh - 70px);
+            top: 70px;
             padding-bottom: 60px;
         }
 

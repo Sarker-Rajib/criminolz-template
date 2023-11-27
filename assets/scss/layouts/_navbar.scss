@@ -1,12 +1,13 @@
 .header {
     @media(max-width: 991px) {
-        padding-top: 65px;
+        padding-top: 75px;
     }
 
     .header-top {
         background: url(../images/topbar.png) no-repeat center center/cover;
 
         @media(max-width: 991px) {
+            min-height: 70px;
             position: fixed;
             width: 100%;
             top: 0;

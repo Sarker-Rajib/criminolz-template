@@ -1,7 +1,10 @@
 .footer {
     background: url(../images/topbar.png) no-repeat center center/cover;
-    position: relative;
+    position: absolute;
     margin-top: 12px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 
     .footer-l,
     .footer-r {
